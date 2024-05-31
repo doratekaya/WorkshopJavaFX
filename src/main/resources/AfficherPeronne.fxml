@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherPeronne">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="Lnom" layoutX="36.0" layoutY="65.0" text="nom" />
+            <Label fx:id="lprenom" layoutX="36.0" layoutY="105.0" text="prenom" />
+            <Label fx:id="lage" layoutX="40.0" layoutY="142.0" text="age" />
+            <AnchorPane layoutX="285.0" layoutY="-13.0" opacity="0.19" prefHeight="410.0" prefWidth="315.0">
+               <children>
+                  <Label fx:id="afficher" layoutX="32.0" layoutY="119.0" prefHeight="180.0" prefWidth="228.0" text="Label" textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="64.0" text="Personne from DB" textFill="#f30eff" />
+                  <Button layoutX="54.0" layoutY="326.0" mnemonicParsing="false" onAction="#afficherfromDB" prefHeight="26.0" prefWidth="176.0" text="Afficher" textAlignment="RIGHT" textFill="#24abbf" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
